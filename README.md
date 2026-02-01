@@ -24,6 +24,23 @@ A premium, elegant, and interactive digital wedding invitation built with modern
 - **Font Awesome**: Elegant iconography.
 - **Google Fonts**: Cinzel, Tangerine, Cormorant Garamond, and Poppins.
 
+## 🚀 Deployment Instructions (Cloudflare Pages)
+
+To host this invitation on Cloudflare Pages:
+
+1. **Connect Repository**: Link your GitHub/GitLab repo to Cloudflare Pages.
+2. **Build Settings**:
+   - **Framework Preset**: None
+   - **Build Command**: (Leave Blank)
+   - **Build Output Directory**: `/` (or `.` to indicate the root directory)
+3. **Environment**: Ensure all assets (images/audio) are in the root or correctly referenced.
+
+### ⚠️ Common 404 Fix
+If your site shows a "404 Not Found" after a successful build:
+- Go to **Settings > Build & deployments** in Cloudflare.
+- Ensure the **Build output directory** is set to the root (where your `index.html` is). 
+- If you see a `/` or `./`, that is usually correct. If it says `dist` or `public`, change it to `/`.
+
 ## 📁 File Structure
 
 ```text
@@ -37,6 +54,8 @@ A premium, elegant, and interactive digital wedding invitation built with modern
 ├── gallery-2.jpg       # Gallery placeholder 2
 ├── floral-left.png     # Decorative elements
 ├── floral-right.png    # Decorative elements
+├── vector-1.png        # Wedding ceremony illustration 1
+├── vector-2.png        # Wedding ceremony illustration 2
 └── wedding-music1.mp3  # Background music track
 ```
 
