@@ -685,12 +685,21 @@ body {
 
 .wedding-time {
     font-family: var(--font-modern);
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--primary-dark);
+    margin-bottom: 0.8rem;
+    letter-spacing: 1px;
+    line-height: 1.4;
+}
+
+.wedding-time-range {
+    color: var(--secondary-color);
+    font-size: 1.6rem;
     font-weight: 700;
-    color: var(--primary-color);
-    margin-bottom: 0.5rem;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin-top: 0.3rem;
+    text-shadow: none;
 }
 
 .wedding-date {
@@ -1105,7 +1114,9 @@ body {
     gap: 0.8rem;
     margin-bottom: 0.8rem;
     font-size: 1.2rem;
-    color: var(--text-dark);
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-family: var(--font-modern);
 }
 
 .event-info-item i {
@@ -1501,9 +1512,38 @@ body {
         font-size: 2rem;
     }
 
+    .hero-section {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-top: 50px;
+    }
+
+    .hero-content {
+        padding-bottom: 150px;
+    }
+
     .decorative-couple-left,
     .decorative-couple-right {
         display: block;
+        position: absolute;
+        bottom: 40px;
+        opacity: 1;
+        z-index: 5;
+        animation: none !important;
+        /* Prevent entrance animations from overriding position */
+    }
+
+    .decorative-couple-left {
+        left: 3%;
+        transform: none;
+    }
+
+    .decorative-couple-right {
+        right: 3%;
+        left: auto;
+        transform: none;
     }
 
     .couple-decoration {
